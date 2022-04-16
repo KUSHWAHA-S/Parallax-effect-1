@@ -1,0 +1,101 @@
+:root{
+  --bgcolor:#A1C19C;
+  --blk: #000;
+}
+
+body,html{
+  height: 100%;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.bird{
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.bird1{
+  background-image: url('img/bird1.jpg');
+}
+.bird2{
+  background-image: url('img/bird2.jpg');
+}
+.bird3{
+  background-image: url('img/bird3.jpg');
+}
+.bird4{
+  background-image: url('img/bird4.jpg');
+}
+.bird5{
+  background-image: url('img/bird5.jpg');
+}
+.div1{
+  top: 30%;
+  left :-10%;
+  position: absolute;
+  width:100%;
+  text-align: center;
+}
+.even{
+  left: 55%;
+}
+.odd{
+  left: 3%;
+}
+.tittle{
+  background-color: var(--blk);
+  color:var(--bgcolor);
+  padding: 10px 20px;
+  font-size: 40px;
+  border-radius: 2%;
+  opacity: 0.9;
+}
+.content{
+  top: 70%;
+  width:35%;
+  padding : 3%;
+text-align: center;
+background-color: var(--bgcolor);
+position: relative;
+opacity: 0.8;
+}
+
+footer{
+  text-align: center;
+  background-color: var(--blk);
+  color:var(--bgcolor);
+  padding: 1%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .div1{
+    left:0;
+  }
+  .tittle{
+    font-size: 190%;
+  }
+  .content{
+    font-size: 90%;
+    width:70%;
+  }
+  .odd{
+    left: 7%;
+  }
+  .even{
+    left:17%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .div1{
+    left:0;
+  }
+  .tittle{
+    font-size: 170%;
+  }
+  .content{
+    font-size: 80%;
+  }
+  .even, .odd{
+    left: 2%;
+    width:90%;
+  }
+}
